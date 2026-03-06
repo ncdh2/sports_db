@@ -53,10 +53,10 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted px-4">
+    <div className="min-h-screen flex items-center justify-center  from-background to-muted px-4">
       <Card className="w-full max-w-md border-2">
-        <CardHeader className="bg-secondary text-secondary-foreground rounded-t-lg">
-          <CardTitle className="flex items-center gap-2">
+        <CardHeader className="bg-primary text-secondary-foreground rounded-t-lg">
+          <CardTitle className="flex items-center gap-2 p-2">
             <UserPlus className="w-5 h-5" />
             Create Account
           </CardTitle>
@@ -68,7 +68,7 @@ export default function RegisterPage() {
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
               <div className="flex items-center gap-2 bg-destructive/10 border border-destructive/20 rounded-lg p-3 text-sm text-destructive">
-                <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                <AlertCircle className="w-4 h-4 shrink-0" />
                 {error}
               </div>
             )}

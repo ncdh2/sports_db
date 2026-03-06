@@ -369,7 +369,7 @@ export default function AthleteDetailPage() {
                           src={athlete.photo}
                           alt={`${athlete.firstName} ${athlete.lastName}`}
                           fill
-                          className="object-cover"
+                          className="object-center"
                           priority
                         />
                       </div>

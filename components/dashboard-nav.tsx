@@ -49,17 +49,17 @@ export function DashboardNav() {
       {/* Logo */}
       <Link href="/dashboard" className="font-bold text-2xl mb-6">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-sidebar-primary rounded-lg flex items-center justify-center text-white font-bold">
+          {/* <div className="w-8 h-8 bg-sidebar-primary rounded-lg flex items-center justify-center text-white font-bold ">
             SN
-          </div>
-          <span className="text-foreground">Sports NG</span>
+          </div> */}
+          <span className="text-white ">Sports NG</span>
         </div>
       </Link>
 
       {/* User Info */}
       <Card className="bg-sidebar-accent/20 border-sidebar-accent p-3 text-sm">
-        <p className="font-medium text-foreground">{user?.name}</p>
-        <p className="text-xs text-muted-foreground capitalize">
+        <p className="font-medium text-white">{user?.name}</p>
+        <p className="text-xs text-white capitalize">
           {user?.role.replace("_", " ")}
         </p>
       </Card>
@@ -94,7 +94,7 @@ export function DashboardNav() {
           </Button>
         </Link>
         <Button
-          variant="destructive"
+          variant="ghost"
           className="w-full justify-start gap-2"
           onClick={handleLogout}
         >

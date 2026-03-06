@@ -83,10 +83,10 @@ export default function HomePage() {
             ) : (
               <>
                 <Link href="/auth/login">
-                  <Button variant="ghost">Login</Button>
+                  <Button variant="default">Login</Button>
                 </Link>
                 <Link href="/auth/register">
-                  <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                  <Button className="bg-primary text-secondary-foreground hover:bg-primary/90">
                     Sign Up
                   </Button>
                 </Link>
@@ -97,7 +97,7 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 via-secondary/5 to-background py-20 px-4">
+      <section className=" from-primary/5 via-secondary/5 to-background py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Nigeria&apos;s Premier Sports{" "}
@@ -114,7 +114,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Link href="/auth/login">
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="default" className="text-white ">
                 Login to Your Account
               </Button>
             </Link>
@@ -185,7 +185,7 @@ export default function HomePage() {
             <Link href="/auth/register">
               <Button
                 size="lg"
-                className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                className="bg-primary text-secondary-foreground hover:bg-primary/60"
               >
                 Create Free Account
               </Button>
