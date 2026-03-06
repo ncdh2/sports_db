@@ -173,7 +173,7 @@ function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted px-4">
+    <div className="min-h-screen flex items-center justify-center  from-background to-muted px-4">
       <Card className="w-full max-w-md border-2">
         <CardHeader className="bg-primary text-primary-foreground rounded-t-lg">
           <CardTitle className="flex items-center gap-2">
@@ -228,7 +228,7 @@ function LoginForm() {
 
             <Button
               type="submit"
-              className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90"
+              className="w-full bg-primary text-secondary-foreground hover:bg-primary/90"
               disabled={loading}
             >
               {loading ? "Signing in..." : "Sign In"}
@@ -247,11 +247,11 @@ function LoginForm() {
             </p>
           </div>
 
-          <div className="mt-4 p-3 bg-muted rounded-lg text-xs text-muted-foreground">
+          {/* <div className="mt-4 p-3 bg-muted rounded-lg text-xs text-muted-foreground">
             <p className="font-medium mb-2">Demo Credentials:</p>
             <p>Email: admin@sports.ng</p>
             <p>Password: admin123</p>
-          </div>
+          </div> */}
         </CardContent>
       </Card>
     </div>

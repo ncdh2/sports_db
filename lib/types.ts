@@ -148,6 +148,36 @@ export interface Result {
   updatedAt: Date;
 }
 
+// Sport Types
+export interface Sport {
+  _id: string;
+  name: string;
+  description?: string;
+  category: "Individual" | "Team" | "Combat" | "Winter" | "Water" | "Other";
+  icon?: string;
+  rules?: string;
+  status: "Active" | "Inactive";
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// Event Types (specific athletic events within a sport - e.g., 100m, 200m for Athletics)
+export interface SportEvent {
+  _id: string;
+  name: string;
+  sportId: string;
+  sportName: string;
+  description?: string;
+  eventType: "Track" | "Field" | "Throwing" | "Swimming" | "Combat" | "Other";
+  rules?: string;
+  standardDistance?: string; // For track events (e.g., "100 meters")
+  minParticipants?: number;
+  maxParticipants?: number;
+  status: "Active" | "Inactive";
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 export interface SessionUser {
   id: string;
   email: string;
